@@ -1,7 +1,7 @@
 # Sphinx-Server
 
 Sphinx-Server allows you to build *Sphinx documentation* using a Docker
-image based on Alpine.
+image based on Alpine (v3.7).
 
 [![Build Status](https://travis-ci.org/dldl/sphinx-server.svg?branch=master)](https://travis-ci.org/dldl/sphinx-server)
 [![Docker pulls](https://img.shields.io/docker/pulls/dldl/sphinx-server.svg)](https://hub.docker.com/r/dldl/sphinx-server/)
@@ -9,10 +9,15 @@ image based on Alpine.
 [![Docker automated build](https://img.shields.io/docker/automated/dldl/sphinx-server.svg)](https://hub.docker.com/r/dldl/sphinx-server/)
 
 **Functionnalities:**
-
+***Full version***
 - *Sphinx documentation* served by a python server
 - UML support with *PlantUML*
 - `dot` support with *Graphviz*
+- *Autobuild* with sphinx-autobuild
+- HTTP *authentication*
+
+***Basic version***
+- *Sphinx documentation* served by a python server
 - *Autobuild* with sphinx-autobuild
 - HTTP *authentication*
 
