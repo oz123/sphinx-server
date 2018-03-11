@@ -9,6 +9,7 @@ image based on Alpine (v3.7).
 [![Docker automated build](https://img.shields.io/docker/automated/dldl/sphinx-server.svg)](https://hub.docker.com/r/dldl/sphinx-server/)
 
 **Functionnalities:**
+
 ***Full version***
 - *Sphinx documentation* served by a python server
 - UML support with *PlantUML*
