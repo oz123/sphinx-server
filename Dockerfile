@@ -1,11 +1,12 @@
-FROM alpine:3.5
+FROM alpine:3.7
 
 MAINTAINER Loïc Pauletto <loic.pauletto@gmail.com>
 MAINTAINER Quentin de Longraye <quentin@dldl.fr>
+MAINTAINER Oz Tiram <oz.tiram@gmail.com>
 
-RUN apk add --no-cache --virtual --update py-pip make wget ca-certificates ttf-dejavu openjdk8-jre graphviz \
-    && pip install --upgrade pip \
-    && pip install sphinx sphinx_rtd_theme sphinxcontrib-plantuml sphinx_autobuild
+RUN apk add --no-cache --virtual --update python3 make wget ca-certificates ttf-dejavu openjdk8-jre graphviz \
+    && pip3 install --upgrade pip \
+    && pip3 install sphinx sphinx_rtd_theme sphinx_autobuild
 
 RUN wget http://downloads.sourceforge.net/project/plantuml/plantuml.jar -P /opt/ \
     && echo -e '#!/bin/sh -e\njava -jar /opt/plantuml.jar "$@"' > /usr/local/bin/plantuml \
